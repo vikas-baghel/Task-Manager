@@ -1,3 +1,3 @@
 # Task-Manager
-Task Manager web application using express
-Not finished. Work in progress.
+Task Manager web application using express.
+- Not finished. Work in progress.
