@@ -14,11 +14,9 @@ const getAllTasks = async (req, res) => {
     try {
         // argument of .find() is the filter conditions
         // since we require all task, we keep it empty
-        console.log("Trying to get all tasks")
         const tasks = await Task.find({})
         // allTasks is a array
-        console.log("Succes")
-        res.status(200).json({tasks:tasks})
+         res.status(200).json({tasks:tasks})
     } catch (error) {
         res.status(500).json({msg:error})
     }

@@ -17,6 +17,7 @@ app.use(express.json())
 //routes
 app.use('/api/v1/tasks', tasks)
 
+// if no route till now then pass custom notFound middleware
 app.use(notFound)
 
 const start =  async () => {
