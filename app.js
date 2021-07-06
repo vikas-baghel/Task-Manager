@@ -6,17 +6,15 @@ require('dotenv').config()
 
 const port = 3000
 
-// for handling json post
-app.use(express.json())
-
 // static routes
 app.use(express.static('./public'))
 
+// for handling json post
+app.use(express.json())
+
+
 //routes
 app.use('/api/v1/tasks', tasks)
-app.get('/hello', (req, res) => {
-    res.status(200).send("Hello World");
-})
 
 const start =  async () => {
     try {
